@@ -1,5 +1,5 @@
 {
-  "name": "iti-pds-panel-back",
+  "name": "visionn-air-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ITI-IT-S-TIME-TO-INNOVATE/ITI-PDS-Panel-Back.git"
+    "url": "git+https://github.com/EloxFire/visionn-air-api"
   },
   "author": "Enzo Avagliano",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ITI-IT-S-TIME-TO-INNOVATE/ITI-PDS-Panel-Back.git/issues"
+    "url": "https://github.com/EloxFire/visionn-air-api/issues"
   },
-  "homepage": "https://github.com/ITI-IT-S-TIME-TO-INNOVATE/ITI-PDS-Panel-Back.git#readme",
+  "homepage": "https://github.com/EloxFire/visionn-air-api#readme",
   "dependencies": {
     "@ladjs/graceful": "^2.0.1",
     "axios": "^0.26.1",

@@ -6,8 +6,7 @@ const logger = require('morgan');
 const cors = require('cors');
 const bodyParser = require('body-parser')
 
-const drugstoresRouter = require('./routes/drugstores');
-const pharmacistsRouter = require('./routes/pharmacists');
+const indexRouter = require('./routes/index');
 
 const app = express();
 
@@ -24,8 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.use('/drugstores', drugstoresRouter);
-app.use('/pharmacists', pharmacistsRouter);
+app.use('/', indexRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

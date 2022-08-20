@@ -91,7 +91,7 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 
-  console.log(boxen(`${term_colors.FgCyan}IT'S TIME TO INNOVATE${term_colors.Reset}\n${term_colors.FgCyan}     PANEL API${term_colors.Reset}`, { padding: 1, borderStyle: 'round' }));
+  console.log(boxen(`${term_colors.FgGreen}VISIONN'AIR${term_colors.Reset}\n${term_colors.FgGreen}    API${term_colors.Reset}`, { padding: 1, borderStyle: 'round' }));
   console.log(` => ${term_colors.FgGreen}Started successfully !${term_colors.Reset}`);
   console.log(` => ${term_colors.FgGreen}Listening on port : ${term_colors.FgYellow}${addr.port}${term_colors.Reset}`);
   console.log(` => ${term_colors.FgGreen}Version : ${term_colors.FgYellow}${package.version}${term_colors.Reset}`);
