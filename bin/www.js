@@ -15,7 +15,7 @@ const package = require('../package.json');
  * Get port from environment and store in Express.
  */
 
-const port = normalizePort(process.env.PORT || '3001');
+const port = normalizePort(process.env.APP_PORT || '3000');
 app.set('port', port);
 
 /**

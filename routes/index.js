@@ -19,10 +19,13 @@ database.connect((error) => {
 
 // GET DATA FROM LAST 7 DAYS
 router.get('/', async (req, res) => {
-  res.send('ok');
+  const sqlQuery = `SELECT * FROM all_time_history WHERE created_at BETWEEN DATE_SUB(NOW(), INTERVAL 7 DAY) AND NOW()`;
+
+  database.query(sqlQuery, (err, rows, fields) => {
+    if (err) throw err;
+    if (rows.length === 0) { res.status(204).json({ message: 'Request successful, but no data found' }); return; };
+    res.status(200).send(rows);
+  })
 });
-
-// GET DATA FROM YESTERDAY
-
 
 module.exports = router;
