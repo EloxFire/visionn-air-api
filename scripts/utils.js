@@ -2,6 +2,7 @@ const term_colors = {
   Reset: "\x1b[0m",
   Bright: "\x1b[1m",
   Dim: "\x1b[2m",
+  Italic: "\x1b[3m",
   Underscore: "\x1b[4m",
   Blink: "\x1b[5m",
   Reverse: "\x1b[7m",

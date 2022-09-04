@@ -5,10 +5,12 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const cors = require('cors');
 const bodyParser = require('body-parser')
+const dotenv = require('dotenv');
 
 const indexRouter = require('./routes/index');
 
 const app = express();
+dotenv.config();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
